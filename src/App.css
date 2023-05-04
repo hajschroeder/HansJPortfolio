@@ -29,14 +29,6 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .container {
   position: relative;
@@ -57,4 +49,13 @@
   opacity: 1;
   transform: scale(1);
   transition: opacity 300ms, transform 300ms;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
