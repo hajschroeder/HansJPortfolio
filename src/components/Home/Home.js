@@ -1,11 +1,18 @@
-import React from "react";
+import React, { Fragment } from "react";
+import homeImage from '../../assets/kevinPortfolio.jpeg'
+import classes from './Home.module.css'
 
 const Home  = ()=> {
 
   return (
-    <div>
+    <Fragment>
+
       <h1>Home Placeholder</h1>
-    </div>
+      <div className={classes['main-image']}>
+        <img src={homeImage} alt='literally me!' />
+      </div>
+
+    </Fragment>
   )
 }
 
