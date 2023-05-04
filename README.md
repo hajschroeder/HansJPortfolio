@@ -1,3 +1,5 @@
-# Hans J Schroeder Portfolio
+# Hans J Schroeder Professional Portfolio
 
-A super duper professional portfolio and not at all the work of an out-of-practice junior dev
+Work in Progress
+
+Built with React v18.2.0
