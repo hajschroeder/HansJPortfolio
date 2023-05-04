@@ -7,23 +7,23 @@ const Navbar = () => {
       <nav>
         <ul>
           <li>
-            <NavLink activeClassName= {classes.active} to='/about'>
-              AboutNB 
+            <NavLink className= {classes.active} to='/about'>
+              About 
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName= {classes.active} to='/contact'>
-              Contact NB  
+            <NavLink className= {classes.active} to='/contact'>
+              Contact  
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName= {classes.active} to='/projects'>
-              Projects NB  
+            <NavLink className= {classes.active} to='/projects'>
+              Projects  
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName= {classes.active} to='/home'>
-              Home NB
+            <NavLink className= {classes.active} to='/home'>
+              Home
             </NavLink>
           </li>
         </ul>
