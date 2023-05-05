@@ -6,6 +6,7 @@ import Contact from './components/Contact/Contact'
 import Home from './components/Home/Home'
 import Projects from './components/Projects/Projects'
 import Layout from './components/Layout/Layout'
+
 const routes = [
   { path: '/', name: 'Home', element: <Home />, nodeRef: createRef() },
   { path: '/home', name: 'Home', element: <Home />, nodeRef: createRef() },
@@ -19,7 +20,9 @@ const routes = [
   { path: '/projects', name: 'Projects', element: <Projects />, nodeRef: createRef()}
 ]
 
-export function App() {
+
+
+const App = () => {
   const location = useLocation()
   const currentOutlet = useOutlet()
   const { nodeRef } =

@@ -1,7 +1,7 @@
 import { createRef } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider, NavLink } from 'react-router-dom'
-import { App } from './App'
+import  App from './App'
 import './App.css'
 import About from './components/About/About'
 import Contact from './components/Contact/Contact'
@@ -37,4 +37,23 @@ const router = createBrowserRouter([
 const container = document.getElementById('root')
 const root = createRoot(container)
 root.render(<RouterProvider router={router} />)
+
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+
+// import './index.css';
+// import App from './App';
+// import { BrowserRouter, RouterProvider, createBrowserRouter } from 'react-router-dom';
+
+// const router = createBrowserRouter([
+//   { element: <App />,
+// },
+// ])
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <BrowserRouter router={router}>
+//     <App />
+//   </BrowserRouter>
+// );
 
