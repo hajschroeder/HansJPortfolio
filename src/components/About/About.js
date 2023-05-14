@@ -1,18 +1,35 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import classes from './About.module.css';
-import Card from '../Layout/Card';
+import Card from '../UI/Card';
+import SubCard from '../UI/SubCard';
+import PdfTest from '../../assets/PDFTEST.pdf'
+import PdfModal from '../UI/PdfModal';
+import Techstack from './Techstack';
+
+
 
 const About = () => {
+  const [pdfModalState, setPdfModalState] = useState();
   const [inProp, setInProp] = useState(true);
-
+  const file = PdfTest
+  const pdfModalHandler = () => {
+    setPdfModalState(null)
+  }
   return (
-    <div>
-            <h2>About Placeholder</h2>
-            <Card>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit enim in velit tincidunt feugiat. Vestibulum vestibulum interdum ultricies. Sed sit amet commodo lectus, sed rhoncus dolor. Cras pulvinar, tellus at dictum tincidunt, tellus tellus ultricies mi, vitae ornare leo tortor ut lacus. Praesent laoreet augue eget dolor fringilla hendrerit. Praesent nec justo id lorem malesuada commodo et vitae arcu. Curabitur pellentesque magna eu lorem venenatis, in faucibus purus aliquet. In nisi massa, tristique nec sem eu, tempus pulvinar lorem. Proin nec justo volutpat augue ultricies venenatis ut non nunc. Fusce sit amet orci vel libero vestibulum aliquet. Sed tortor sem, porttitor vel velit a, tincidunt finibus libero. Nullam placerat eget tellus quis blandit. Maecenas sit amet congue ex. Fusce laoreet justo ac massa rhoncus suscipit. Vivamus in lacus venenatis, finibus ipsum sed, posuere magna. Etiam laoreet orci sit amet justo interdum, accumsan tincidunt odio commodo.</p>
-            </Card>
+    <Fragment>
+      <div className={classes.about}>
+        <h2>About</h2>
+        <Card>
+          <p>Hey! I'm Hans, and I'm a professional full-stack web and software developer based out of beautiful Portland, Oregon.<br /><br />Possessing a highly ecclectic background, I am able to take a unique and rich approach to writing code and collaborating on projects. With the creativity of a musician, the problem solving skills of a mechanic, and the organization of a Letter Carrier, I am able to bring a unique quality efficiency and perspective to all projects which I contribute</p>
+          <PdfModal file={file} />
+        </Card>
+      </div>
+      <SubCard>
+        <h3>Tech Stack</h3>
+      </SubCard>
+      <Techstack />
+    </Fragment>
 
-    </div>
   );
 };
 
