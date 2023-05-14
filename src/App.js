@@ -5,7 +5,7 @@ import About from './components/About/About'
 import Contact from './components/Contact/Contact'
 import Home from './components/Home/Home'
 import Projects from './components/Projects/Projects'
-import Layout from './components/Layout/Layout'
+import Layout from './components/UI/Layout'
 
 const routes = [
   { path: '/', name: 'Home', element: <Home />, nodeRef: createRef() },
