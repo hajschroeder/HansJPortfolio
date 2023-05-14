@@ -1,10 +1,12 @@
-import Card from '../Layout/Card';
-import Modal from '../Layout/Modal';
+import Card from '../UI/Card';
+import Modal from '../UI/Modal';
+import classes from './Contact.module.css'
 import * as FaIcons from 'react-icons/fa';
 import * as MdIcons from 'react-icons/md';
 import * as RxIcons from 'react-icons/rx'
 import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import SubCard from '../UI/SubCard';
 const Contact = () => {
 
 
@@ -13,47 +15,51 @@ const Contact = () => {
   const email = 'email@todayisfun.com'
   const copyHandler = (copyEvent) => {
     copyEvent.preventDefault();
-          setModalState({
-            title: 'Success',
-            message: 'Email Copied to Clipboard'
-          });
-        return;
-      }
-      const modalHandler = () => {
-        setModalState(null)
+    setModalState({
+      title: 'Success',
+      message: 'Email Copied to Clipboard'
+    });
+    return;
+  }
+  const modalHandler = () => {
+    setModalState(null)
   }
   return (
     <div>
       {modalState && (
-        <Modal 
+        <Modal
           title={modalState.title}
           message={modalState.message}
           onModalHandler={modalHandler}
         />
       )}
-    <div>
-    <h2>Contact</h2>
-      <Card>
-        <ul>
-          <li>
-            <FaIcons.FaGithub />
-            <a href="https://github.com/hajschroeder">Github</a>
-          </li>
-          <li>
-            <div>
-            <MdIcons.MdAlternateEmail />
-            <CopyToClipboard text={email} onCopy={()=> setIsCopiedState(true)}>
-              <a href={email} onClick={copyHandler}>email</a>
-            </CopyToClipboard>
-              {/* <RxIcons.RxCopy /> */}
+      <div className={classes.about}>
+        <h2>Contact</h2>
+        <Card>
+          <div className={classes.icons}>
+            <a href="https://github.com/hajschroeder">
+              <FaIcons.FaGithub />
+            </a>
+            </div>
+          <div className={classes.icons}>
+            <a href="https://www.linkedin.com/in/hans-j-schroeder/">
+              <FaIcons.FaLinkedin />
+            </a>
             </div>
 
-          </li>
-        </ul>
-      </Card>
+            <div className={classes.icons}>
+              <CopyToClipboard text={email} onCopy={() => setIsCopiedState(true)}>
+                <a href={email} onClick={copyHandler}>
+                  <MdIcons.MdAlternateEmail />
+
+                </a>
+              </CopyToClipboard>
+              {/* <RxIcons.RxCopy /> */}
+            </div>
+        </Card>
+      </div>
     </div>
-    </div>
-    )
+  )
 }
 
 export default Contact
