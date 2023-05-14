@@ -3,7 +3,9 @@
 }
 
 html {
-  font-family: 'DM Serif Display', serif;
+  /* font-family: 'Abril Fatface', cursive; */
+  /* font-family: 'DM Serif Display', serif; */
+  font-family: 'Patua One', cursive;
   background: #1f1f1f;
   color: rgb(132, 233, 132)
 }
