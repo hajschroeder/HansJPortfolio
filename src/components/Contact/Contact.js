@@ -12,11 +12,11 @@ const Contact = () => {
 
   const [isCopiedState, setIsCopiedState] = useState(false);
   const [modalState, setModalState] = useState();
-  const email = 'email@todayisfun.com'
+  const email = 'hajschroeder@gmail.com'
   const copyHandler = (copyEvent) => {
     copyEvent.preventDefault();
     setModalState({
-      title: 'Success',
+      title: 'Drop me a line!',
       message: 'Email Copied to Clipboard'
     });
     return;
