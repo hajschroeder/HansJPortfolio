@@ -1,4 +1,4 @@
-import React, { div } from 'react';
+import React from 'react';
 import classes from './Modal.module.css'
 import Card from './Card';
 

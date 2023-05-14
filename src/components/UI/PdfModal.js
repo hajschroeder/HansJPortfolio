@@ -14,6 +14,9 @@ const Modal = ({ isOpen, onClose, children }) => {
         {children}
         {/* <Button className="modal__close" onClick={onClose}> */}
           <FaIcons.FaWindowClose className="modal__close" onClick={onClose}/>
+          <a href="../../assets/PDFTEST.pdf">
+            <FaIcons.FaDownload/>
+          </a>
           
         {/* </Button> */}
       </div>
