@@ -19,13 +19,13 @@ const Techstack = () => {
     <div>
       <Row >
         <div className={classes.icons}>
-          <Col>
-            <DiIcons.DiGit />
+          <Col >
+            <MdIcons.MdHtml />
           </Col>
         </div>
         <div className={classes.icons}>
           <Col >
-            <DiIcons.DiGithubBadge />
+            <DiIcons.DiCss3 />
           </Col>
         </div>
         <div className={classes.icons}>
@@ -35,7 +35,7 @@ const Techstack = () => {
         </div>
         <div className={classes.icons}>
           <Col >
-            <DiIcons.DiPostgresql />
+            <DiIcons.DiReact />
           </Col>
         </div>
         <div className={classes.icons}>
@@ -49,18 +49,18 @@ const Techstack = () => {
           </Col>
         </div>
         <div className={classes.icons}>
-          <Col >
-            <DiIcons.DiReact />
+          <Col>
+            <DiIcons.DiGit />
           </Col>
         </div>
         <div className={classes.icons}>
           <Col >
-            <MdIcons.MdHtml />
+            <DiIcons.DiGithubBadge />
           </Col>
         </div>
         <div className={classes.icons}>
           <Col >
-            <DiIcons.DiCss3 />
+            <DiIcons.DiPostgresql />
           </Col>
         </div>
         <div className={classes.icons}>
