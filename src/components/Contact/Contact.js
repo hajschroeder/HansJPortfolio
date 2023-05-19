@@ -37,14 +37,14 @@ const Contact = () => {
         <h2>Contact</h2>
         <Card>
           <div className={classes.icons}>
-            <a href="https://github.com/hajschroeder">
+            <a href="https://github.com/hajschroeder" target="_blank" rel="noreferrer">
               <FaIcons.FaGithub />
-            </a>
+            </a>{" "}
             </div>
           <div className={classes.icons}>
-            <a href="https://www.linkedin.com/in/hans-j-schroeder/">
+            <a href="https://www.linkedin.com/in/hans-j-schroeder/" target="_blank" rel="noreferrer">
               <FaIcons.FaLinkedin />
-            </a>
+            </a>{" "}
             </div>
 
             <div className={classes.icons}>
