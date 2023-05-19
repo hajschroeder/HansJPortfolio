@@ -3,10 +3,10 @@ import Modal from '../UI/Modal';
 import classes from './Contact.module.css'
 import * as FaIcons from 'react-icons/fa';
 import * as MdIcons from 'react-icons/md';
-import * as RxIcons from 'react-icons/rx'
+// import * as RxIcons from 'react-icons/rx'
 import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import SubCard from '../UI/SubCard';
+// import SubCard from '../UI/SubCard';
 const Contact = () => {
 
 
@@ -17,7 +17,8 @@ const Contact = () => {
     copyEvent.preventDefault();
     setModalState({
       title: 'Drop me a line!',
-      message: 'Email Copied to Clipboard'
+      message: 'Email Copied to Clipboard',
+      isCopiedState
     });
     return;
   }

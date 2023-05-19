@@ -3,7 +3,6 @@ import { Link as NavLink } from 'react-router-dom'
 import homeImage from '../../assets/hjs.jpg'
 import classes from './Home.module.css'
 import SubCard from "../UI/SubCard";
-import { Link } from "react-router-dom";
 
 const Home = () => {
 

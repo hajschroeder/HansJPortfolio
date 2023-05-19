@@ -1,5 +1,5 @@
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
+// import * as FaIcons from 'react-icons/fa';
 import * as DiIcons from 'react-icons/di'
 import * as MdIcons from 'react-icons/md'
 import * as SiIcons from 'react-icons/si'
