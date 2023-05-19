@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
 import classes from './About.module.css';
 import Card from '../UI/Card';
 import SubCard from '../UI/SubCard';

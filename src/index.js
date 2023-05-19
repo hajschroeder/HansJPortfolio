@@ -1,6 +1,6 @@
 import { createRef } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider, NavLink } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import  App from './App'
 import './App.css'
 import About from './components/About/About'
