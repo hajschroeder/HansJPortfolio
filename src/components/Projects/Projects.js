@@ -50,6 +50,7 @@ const Projects = (props) => {
           <h3>Office Scheduler (WIP)</h3>
           <a href="https://github.com/hajschroeder/office-scheduler" target="_blank" rel="noreferrer">Github</a>{" "}
           <p>This was my Capstone project for the coding boot camp Epicodus. This was an application for workers to post their daily and weekly statuses in order to let coworkers know if they are in the office or working remotely, when they are at lunch or unavailable, and whether on not they have an 'open door'. </p>
+          <h3>Tech</h3>
           <Row>
             <div className={classes.icons}>
               <Col >
@@ -69,6 +70,7 @@ const Projects = (props) => {
           <h3>PNW Mutual Aid API</h3>
           <a href="https://github.com/hajschroeder/PNW-Mutual-Aid-API" target="_blank" rel="noreferrer">Github</a>{" "}
           <p>Built with Ruby on Rails and using PostgreSQL for our databse, this was a Team Week project for Epicodus. We built an API and populated a database with information related to community programs and resources within the Pacific Northwest.</p>
+          <h3>Tech</h3>
           <Row>
             <div className={classes.icons}>
                 <Col >

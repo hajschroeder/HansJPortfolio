@@ -3,8 +3,11 @@
   color: black;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   border-radius: 5px;
+  border: solid #95bcf0;
+  border-width: 5px;
   margin: 2rem auto;
   padding: 1rem;
+  padding-right: 2rem;
   width: 90%;
   max-width: 40rem;
 }
@@ -12,6 +15,7 @@
 /* .card ul{
   display: grid;
 } */
+
 
 .card-title {
   display: grid;
