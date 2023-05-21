@@ -1,3 +1,65 @@
 .about h2{
   text-align: center;
 }
+
+.icons {
+  background: #85c8ee;
+  font-size: 4.5em ;
+  margin: 15px ;
+  padding: 10px ;
+  opacity: 0.93 ;
+  border: 1.7px solid rgba(200, 137, 230, 0.637) ;
+  vertical-align: middle ;
+  text-align: center ;
+  justify-content: center;
+  border-radius: 5px ;
+  display: grid;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) ;
+  overflow: hidden ;
+  transition: all 0.4s ease 0s ;
+}
+.icons ul{
+  display: grid;
+}
+
+.icons a{
+  color: rgb(132, 233, 132)
+
+}
+
+@media (max-width: 767px) {
+  .icons {
+    margin: 10px ;
+  }
+}
+
+.icons:hover {
+  transform: scale(1.05);
+  overflow: hidden ;
+}
+.icon-images {
+  padding: 20px ;
+  line-height: 1.6 ;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.col {
+  padding: 1rem;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
