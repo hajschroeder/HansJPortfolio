@@ -2,7 +2,7 @@ import React, { Fragment } from "react"
 import classes from './Projects.module.css'
 import Card from "../UI/Card"
 import * as DiIcons from 'react-icons/di'
-import * as MdIcons from 'react-icons/md'
+// import * as MdIcons from 'react-icons/md'
 import * as SiIcons from 'react-icons/si'
 
 const Row = ({ children }) => {
