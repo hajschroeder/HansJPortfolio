@@ -25,7 +25,7 @@ const Projects = (props) => {
           <h3>Music Tutor (WIP)</h3>
           <a href="https://github.com/hajschroeder/react-music-tutor-beta/" target="_blank" rel="noreferrer">Github</a>{" "}
           <p>An education App built around teaching people to read sheet music. The idea behind this was to create a template for future education-based apps.</p>
-          <h3>Built With</h3>
+          <h3>Tech</h3>
           <Row>
             <div className={classes.icons}>
               <Col >

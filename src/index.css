@@ -1,15 +1,23 @@
 * {
   box-sizing: border-box;
+  /* background: linear-gradient(#1f1f1f, #5a5959) ; */
+
 }
 
 html {
   /* font-family: 'Abril Fatface', cursive; */
   /* font-family: 'DM Serif Display', serif; */
   font-family: 'Patua One', cursive;
-  background: #1f1f1f;
-  color: rgb(132, 233, 132)
+  /* background: #1f1f1f; */
+  color: rgb(132, 184, 233);
+  /* color: rgb(167, 185, 159); */
+
+  background: linear-gradient(to right, #1f1f1f, #948e8e) ;
+
 }
 
 body {
   margin: 0;
+  /* background: linear-gradient(#1f1f1f, #5a5959) ; */
+
 }

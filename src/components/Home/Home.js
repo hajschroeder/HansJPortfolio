@@ -13,7 +13,7 @@ const Home = () => {
         <p>Building and creating unique solutions. There is no problem so complex that cannot be solved with creativity.</p>
         <blockquote>
           <p><em>"Leave the world more interesting for you being here."</em></p>
-          <footer>Neil Gaiman, author of <i>American Gods</i></footer>
+          <footer>Neil Gaiman, author</footer>
         </blockquote>
         <div className={classes['main-image']}>
           <img src={homeImage} alt='literally me!' />
