@@ -1,6 +1,8 @@
 .main-image img {
   width: 30%;
   float: right;
+  margin-top: 5rem;
+  margin-right: 5rem;
   height: auto;
   /* padding-bottom: 4rem; */
   border-radius: 15px;

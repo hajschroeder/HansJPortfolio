@@ -12,12 +12,12 @@ html {
   color: rgb(119, 140, 182);
   /* color: rgb(167, 185, 159); */
 
-  background: linear-gradient(to right, #000000, #110404) ;
-
+  
 }
 
 body {
   margin: 0;
+  background: linear-gradient(to right, #000000, #090e16) ;
   /* background: linear-gradient(#1f1f1f, #5a5959) ; */
 
 }

@@ -4,6 +4,7 @@ import Card from "../UI/Card"
 import * as DiIcons from 'react-icons/di'
 // import * as MdIcons from 'react-icons/md'
 import * as SiIcons from 'react-icons/si'
+// import backgroundImage from '../../assets.testShot.png'
 
 const Row = ({ children }) => {
   return <div className={classes.row}>{children}</div>;
@@ -17,7 +18,8 @@ const Col = ({ size, children }) => {
 const Projects = (props) => {
   return (
     <Fragment>
-      <div className={classes.about}>
+      <div className={classes.projects}>
+      <div>
         <h2>Projects</h2>
       </div>
       <Card className={props.children}>
@@ -85,6 +87,7 @@ const Projects = (props) => {
           </Row>
         </ul>
       </Card>
+      </div>
     </Fragment>
   )
 }

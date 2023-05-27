@@ -8,6 +8,9 @@ const Home = () => {
 
   return (
     <Fragment>
+        <div className={classes['main-image']}>
+          <img src={homeImage} alt='literally me!' />
+        </div>
       <div className={classes.home}>
         {/* <Card> */}
         <h2>Full Stack Developer</h2>
@@ -16,9 +19,6 @@ const Home = () => {
           <p><em>"Leave the world more interesting for you being here."</em></p>
           <footer>Neil Gaiman, author</footer>
         </blockquote>
-        <div className={classes['main-image']}>
-          <img src={homeImage} alt='literally me!' />
-        </div>
         {/* </Card> */}
       </div>
       <SubCard>

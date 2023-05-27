@@ -9,6 +9,7 @@ import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import SubCard from '../UI/SubCard';
 
+
 const Contact = () => {
 
 
@@ -28,7 +29,7 @@ const Contact = () => {
     setModalState(null)
   }
   return (
-    <div>
+    <div className={classes.contact}>
       {modalState && (
         <Modal
           title={modalState.title}

@@ -1,11 +1,13 @@
 .card {
-  background: rgb(240, 198, 198);
+  background: rgb(156, 150, 150);
+  /* background: rgb(240, 198, 198); */
   /* background: linear-gradient(#1f1f1f, #5a5959) ; */
 
   color: black;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   border-radius: 5px;
-  border: solid #95bcf0;
+  border: solid #000000;
+  /* border: solid #95bcf0; */
   border-width: 5px;
   margin: 2rem auto;
   padding: 1rem;
