@@ -5,7 +5,9 @@
 .projects{
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgb(46, 45, 45) 100%), url('../../assets/testShot.png');
   background-position: top;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  margin: none;
   /* opacity: 0.7; */
 }
 .icons {

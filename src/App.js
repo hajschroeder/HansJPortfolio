@@ -1,5 +1,5 @@
-import { createRef } from 'react'
-import { CSSTransition, SwitchTransition } from 'react-transition-group'
+import { createRef, useState, useEffect, Fragment } from 'react'
+import { CSSTransition, SwitchTransition, TransitionGroup } from 'react-transition-group'
 import { useLocation, useOutlet, NavLink, Route } from 'react-router-dom'
 import About from './components/About/About'
 import Contact from './components/Contact/Contact'
@@ -18,37 +18,53 @@ const routes = [
     element: <Contact />,
     nodeRef: createRef(),
   },
-  { path: '/projects', name: 'Projects', element: <Projects />, nodeRef: createRef()}
+  { path: '/projects', name: 'Projects', element: <Projects />, nodeRef: createRef() }
 ]
 
 
 
 const App = () => {
+  const [transition, setTransition] = useState(true)
   const location = useLocation()
   const currentOutlet = useOutlet()
   const { nodeRef } =
     routes.find((route) => route.path === location.pathname) ?? {}
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 960px)");
+    setTransition(!mediaQuery.matches);
+    const handleMediaQueryChange = (event) => {
+      setTransition(!event.matches);
+    }
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
   return (
-    <>
-          <Layout>
-          {routes.map((route) => (
-            <Route
-              key={route.path}
-              as={NavLink}
-              to={route.path}
-              className={({ isActive }) => (isActive ? 'active' : undefined)}
-              end
-            >
-              {route.name}
-            </Route>
-          ))}
+    <Fragment>
+      <Layout>
+        {routes.map((route) => (
+          <Route
+            key={route.path}
+            as={NavLink}
+            to={route.path}
+            className={({ isActive }) => (isActive ? 'active' : undefined)}
+            end
+          >
+            {route.name}
+          </Route>
+        ))}
       </Layout>
-      
+
+      {/* {transition && ( */}
         <SwitchTransition>
           <CSSTransition
             key={location.pathname}
             nodeRef={nodeRef}
-            timeout={300}
+            in={true}
+            timeout={500}
             classNames="page"
             unmountOnExit
           >
@@ -59,8 +75,10 @@ const App = () => {
             )}
           </CSSTransition>
         </SwitchTransition>
-      
-    </>
+      {/* )} */}
+
+
+    </Fragment>
   )
 }
 

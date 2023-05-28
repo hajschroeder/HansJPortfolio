@@ -1,9 +1,10 @@
-import { Link as NavLink } from 'react-router-dom';
-import React, { useState } from 'react'
+import React, { useState, Fragment } from 'react';
+import Button from './Button';
+import { Link as NavLink} from 'react-router-dom';
+import './Navbar.css';
 import Dropdown from './Dropdown';
-import classes from './Navbar.module.css';
-
-const Navbar = () => {
+import * as FaIcons from 'react-icons/fa'
+function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
@@ -25,37 +26,62 @@ const Navbar = () => {
       setDropdown(false);
     }
   };
+
   return (
-    <header className={classes.header}>
-      <NavLink to='/' onClick={closeMobileMenu}>
-        <h1>Hans J Schroeder</h1>
-      </NavLink>
-      <nav>
-        <ul>
-          <li>
-            <NavLink className={classes.active} to='/about'>
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className={classes.active} to='/contact'>
-              Contact
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className={classes.active} to='/projects'>
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className={classes.active} to='/home'>
+    <Fragment>
+      <nav className='navbar'>
+        <NavLink to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          Hans J Schroeder
+
+        </NavLink>
+        <div className='menu-icon' onClick={handleClick}>
+          
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        </div>
+
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li className='nav-item'>
+            <NavLink to='/' className='nav-links' onClick={closeMobileMenu}>
               Home
             </NavLink>
           </li>
+          <li
+            className='nav-item'
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          >
+            <NavLink
+              to='/about'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              About 
+            </NavLink>
+          </li>
+          <li className='nav-item'>
+            <NavLink
+              to='/contact'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Contact
+            </NavLink>
+          </li>
+          <li className='nav-item'>
+            <NavLink
+              to='/projects'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Projects
+            </NavLink>
+          </li>
+
         </ul>
+
       </nav>
-    </header>
+    </Fragment>
   );
 }
 
-export default Navbar 
+export default Navbar;
