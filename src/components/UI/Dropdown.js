@@ -1,11 +1,11 @@
-import React, { useState, createRef } from 'react';
-import './Dropdown.css';
-import { Link as NavLink } from 'react-router-dom';
-import Home from '../Home/Home';
-import Contact from '../Contact/Contact';
-import About from '../About/About';
-import Projects from '../Projects/Projects';
-import NavItems from './NavItems'
+// import React, { useState, createRef } from 'react';
+// import './Dropdown.css';
+// import { Link as NavLink } from 'react-router-dom';
+// import Home from '../Home/Home';
+// import Contact from '../Contact/Contact';
+// import About from '../About/About';
+// import Projects from '../Projects/Projects';
+// // import NavItems from './NavItems'
 
 // const routes = [
 //   { path: '/', name: 'Home', element: <Home />, nodeRef: createRef() },
@@ -21,33 +21,33 @@ import NavItems from './NavItems'
 // ]
 
 
-function Dropdown() {
-  const [click, setClick] = useState(false);
+// function Dropdown() {
+//   const [click, setClick] = useState(false);
 
-  const handleClick = () => setClick(!click);
+//   const handleClick = () => setClick(!click);
 
-  return (
-    <>
-      <ul
-        onClick={handleClick}
-        className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
-      >
-        {NavItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <NavLink
-                className={item.name}
-                to={item.path}
-                onClick={() => setClick(false)}
-              >
-                {item.title}
-              </NavLink>
-            </li>
-          );
-        })}
-      </ul>
-    </>
-  );
-}
+//   return (
+//     <>
+//       <ul
+//         onClick={handleClick}
+//         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
+//       >
+//         {routes.map((item, index) => {
+//           return (
+//             <li key={index}>
+//               <NavLink
+//                 className={item.name}
+//                 to={item.path}
+//                 onClick={() => setClick(false)}
+//               >
+//                 {item.title}
+//               </NavLink>
+//             </li>
+//           );
+//         })}
+//       </ul>
+//     </>
+//   );
+// }
 
-export default Dropdown;
+// export default Dropdown;

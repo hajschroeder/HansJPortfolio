@@ -1,9 +1,6 @@
 import React, { useState, Fragment } from 'react';
-import Button from './Button';
 import { Link as NavLink} from 'react-router-dom';
 import './Navbar.css';
-import Dropdown from './Dropdown';
-import * as FaIcons from 'react-icons/fa'
 function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
@@ -25,6 +22,7 @@ function Navbar() {
     } else {
       setDropdown(false);
     }
+    dropdown()
   };
 
   return (
