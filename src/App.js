@@ -1,5 +1,5 @@
 import { createRef, useState, useEffect, Fragment } from 'react'
-import { CSSTransition, SwitchTransition, TransitionGroup } from 'react-transition-group'
+import { CSSTransition, SwitchTransition } from 'react-transition-group'
 import { useLocation, useOutlet, NavLink, Route } from 'react-router-dom'
 import About from './components/About/About'
 import Contact from './components/Contact/Contact'
@@ -57,14 +57,14 @@ const App = () => {
           </Route>
         ))}
       </Layout>
-
+          {transition}
       {/* {transition && ( */}
         <SwitchTransition>
           <CSSTransition
             key={location.pathname}
             nodeRef={nodeRef}
             in={true}
-            timeout={500}
+            timeout={300}
             classNames="page"
             unmountOnExit
           >
