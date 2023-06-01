@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import classes from './About.module.css';
 import Card from '../UI/Card';
 import SubCard from '../UI/SubCard';
-import Resume from '../../assets/Resume.pdf'
+import Resume from '../../assets/ResumePortVers.pdf'
 import PdfModal from '../UI/PdfModal';
 import Techstack from './Techstack';
 

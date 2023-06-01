@@ -78,7 +78,11 @@ const App = () => {
       {/* )} */}
 
 
+    <div class='footer'>
+        <p>site built by hans </p>
+    </div>
     </Fragment>
+
   )
 }
 
